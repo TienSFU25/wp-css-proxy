@@ -3775,7 +3775,7 @@ and the top and bottom ones rotate to form an X
     border-top-width: 0 !important;
     padding-top: 0 !important; } 
   .single-post .c-navbar__zone--middle {
-    margin-top: 75px !important;
+    /* margin-top: 75px !important; */
   }
 }
 
