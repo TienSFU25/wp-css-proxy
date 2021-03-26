@@ -3767,13 +3767,17 @@ and the top and bottom ones rotate to form an X
     margin-top: 0 !important; }
   .c-navbar__zone--middle {
     position: static !important;
-    margin-top: 75px !important;
+    margin-top: 0 !important;
     max-width: 50%; }
   .c-navbar__content {
     height: 90px;
     border: 0 solid transparent;
     border-top-width: 0 !important;
-    padding-top: 0 !important; } }
+    padding-top: 0 !important; } 
+  .single-post .c-navbar__zone--middle {
+    margin-top: 75px !important;
+  }
+}
 
 .c-navbar .c-meta__share-link {
   position: absolute;
