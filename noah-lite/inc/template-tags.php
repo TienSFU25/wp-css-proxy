@@ -296,7 +296,7 @@ function noahlite_header_get_the_left_menu() {
 		'container'       => 'nav',
 		'container_class' => '',
 		'fallback_cb'     => false,
-		'echo'            => false,
+		'echo'            => true,
 	) ) );
 }
 
