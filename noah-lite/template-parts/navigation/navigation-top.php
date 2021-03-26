@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 * the location received act accordingly.
 		 */ ?>
 
-		<div <?php noahlite_css_class( $zone_left_classes, 'header navbar zone middle' ); ?>>
+		<div <?php noahlite_css_class( $zone_middle_classes, 'header navbar zone middle' ); ?>>
 			<?php if ( $has_left_menu ) {
 				echo $menu_left_markup;
 			} elseif ( $has_right_menu ) { ?>
