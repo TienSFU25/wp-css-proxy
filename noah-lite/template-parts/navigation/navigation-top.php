@@ -55,15 +55,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 * the location received act accordingly.
 		 */ ?>
 
-		<div <?php noahlite_css_class( $zone_middle_classes, 'header navbar zone middle' ); ?>>
+		<div <?php noahlite_css_class( $zone_left_classes, 'header navbar zone left' ); ?>>
 			<?php if ( $has_left_menu ) {
 				echo $menu_left_markup;
 			} elseif ( $has_right_menu ) { ?>
-				<div <?php noahlite_css_class( 'header nav', 'header navbar zone middle' ); ?>>
+				<div <?php noahlite_css_class( 'header nav', 'header navbar zone left' ); ?>>
 					<?php get_template_part( 'template-parts/header/branding' ); ?>
 				</div>
 			<?php } ?>
-		</div>
+		</div><!-- .c-navbar__zone .c-navbar__zone--left -->
+
+		<div <?php noahlite_css_class( $zone_middle_classes, 'header navbar zone middle' ); ?>>
+			<?php if ( $has_left_menu || ! ( $has_left_menu || $has_right_menu ) ) { ?>
+				<div <?php noahlite_css_class( 'header nav', 'header navbar zone middle' ); ?>>
+					<?php get_template_part( 'template-parts/header/branding' ); ?>
+				</div>
+			<?php } else {
+				echo $menu_right_markup;
+			}
+			?>
+		</div><!-- .c-navbar__zone .c-navbar__zone--middle -->
+
+		<div <?php noahlite_css_class( $zone_right_classes, 'header navbar zone right' ); ?>>
+			<?php if ( $has_left_menu ) {
+				echo $menu_right_markup;
+			} ?>
+		</div><!-- .c-navbar__zone .c-navbar__zone--right -->
 	</div><!-- .c-navbar__content -->
 
 	<?php if ( ( noahlite_is_frontpage() || ( is_home() && is_front_page() ) ) && has_custom_header() ) : ?>
