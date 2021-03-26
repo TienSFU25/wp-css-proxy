@@ -22,7 +22,7 @@ get_header(); ?>
 				<header class="c-page-header">
 					<?php the_archive_title( '<h1 class="c-page-header__title h1">', '</h1>' ); ?>
 					<div class="c-page-header__meta h7">
-						<span><?php esc_html_e( 'Show', 'noah-lite' ); ?></span>
+						<!-- <span><?php esc_html_e( 'Show', 'noah-lite' ); ?></span> -->
 						<!-- <span class="c-page-header__taxonomy  u-color-accent"><?php noahlite_the_taxonomy_dropdown( 'category', get_query_var( 'category_name' ) )?></span> -->
 					</div>
 					<?php if ( get_the_archive_description() ) {
