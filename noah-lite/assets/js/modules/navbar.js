@@ -74,7 +74,7 @@ Navbar.prototype.init = function() {
 	this.$navbar = $( '.c-navbar' );
 	this.$logo = $( '.header.nav' ).parent().addClass( 'has-logo' );
 	this.$share = $( '.c-meta__share-link:not(.c-meta__share-link--desktop)' );
-	this.$clone = this.$logo.clone().css( 'overflow', 'visible' ).addClass( 'mobile-logo-clone' );
+	this.$clone = this.$logo.clone().css( 'overflow', 'hidden' ).addClass( 'mobile-logo-clone' );
 	this.$clone.find( 'img' ).addClass( 'is-loaded' );
 
 	if ( ! $( '.c-navbar__zone' ).filter( function() {
